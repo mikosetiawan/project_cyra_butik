@@ -1,0 +1,122 @@
+/* Landing Page Style
+  /* Navbar Section Style */
+
+  .navbar-container li a {
+    position: relative;
+  }
+
+  .navbar-container li a::before,
+  .navbar-container li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #020202;
+    transition: all 0.2s ease-in;
+    transform-origin: 50% 50%;
+  }
+
+  .navbar-container li a::before {
+    left: 50%; /* Atur pseudo-element ::before dari tengah */
+    transform: translateX(-50%);
+  }
+
+  .navbar-container li a::after {
+    right: 50%; /* Atur pseudo-element ::after dari tengah */
+    transform: translateX(50%);
+  }
+
+  .navbar-container li a:hover::before,
+  .navbar-container li a:hover::after {
+    width: 100%;
+  }
+
+  .navbar-container li:hover a {
+    color: #000000;
+  }
+
+
+  /* Hero Section Style */
+
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+
+  .arrow-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    animation: arrowMove 0.8s infinite alternate;
+  }
+
+  @keyframes arrowMove {
+    from {
+        transform: translateY(0); /* Mulai dari posisi awal (tidak bergerak) */
+    }
+    to {
+        transform: translateY(-15px); /* Naik sejauh 10px */
+    }
+  }
+
+  /* Produk Section Style */
+  @media only screen and (min-width: 992px) {
+    .img-produk {
+      width: 200px; 
+      height: 250px; 
+      max-height: 250px; 
+      object-fit: cover;
+    }
+  }
+
+/* Auth Page Style */
+  .login-section {
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+
+  .register-section {
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+
+  /* Dashboard Page Style */
+  .avatar-preview {
+    width: 40px;
+    height: 40px;
+  }
+
+  .product-preview {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Product Page Style */
+      .pagination {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }

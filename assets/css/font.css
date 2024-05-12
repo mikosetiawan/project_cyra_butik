@@ -1,0 +1,107 @@
+/* Cormorant Garamond */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('../fonts/CormorantGaramond-Regular.ttf') format('truetype');
+}
+
+/* Josefin Sans */
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('../fonts/JosefinSans-Regular.ttf') format('truetype');
+}
+
+/* Lato */
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+/* Playfair Display */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+/* Quicksand */
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand-Regular.ttf') format('truetype');
+}
+
+/* Roboto */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+/* Declaring Variable Font Color */
+:root {
+  --primary-color-1: #A79277;
+  --dark-color-1: #776B5D;
+  --medium-color-1: #D1BB9E;
+  --light-color-1: #FFF2E1;
+  --header-text-color-1: #080808;
+  --body-text-color-1: #191919;
+
+  --primary-color-2: #FEFBF6;
+  --dark-color-2: #F1F1F1;
+  --medium-color-2: #F4F4F4;
+  --light-color-2: #F4F6FF;
+  --header-text-color-2: #080808;
+  --body-text-color-2: #191919;
+}
+
+/* Font Class */
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-cormorant-garamond {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-josefin-sans {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-playfair-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Font Color */
+.primary-color {
+  color: var(--primary-color-1);
+}
+
+.dark-color {
+  color: var(--dark-color-1);
+}
+
+.medium-color {
+  color: var(--medium-color-1);
+}
+
+.light-color {
+  color: var(--white-color-1);
+}
+
+.header-color {
+  color: var(--header-text-color-1);
+}
+
+.body-color {
+  color: var(--body-text-color-1);
+}
+
+/* More Font Styles */
+.text-shadow {
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
